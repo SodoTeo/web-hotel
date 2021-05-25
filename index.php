@@ -1,11 +1,14 @@
-<html>
-<head><title>PDO MySQL</title></head>
-	<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PDO MySQL</title>
+</head>
+<style>
 	html, body {
 		margin: 1px;
 		border: 0;
 	}
-	</style>
+</style>
 <body>
 	<div align="center">
 		<div style=" border: solid 1px #079B96; " align="left">

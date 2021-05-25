@@ -46,15 +46,17 @@
 		}
 	}
 ?>
-
-<html>
-<head><title>Login</title></head>
-	<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login</title>
+</head>
+<style>
 	html, body {
 		margin: 1px;
 		border: 0;
 	}
-	</style>
+</style>
 <body>
 	<div align="center">
 		<div style=" border: solid 1px #006D9C; " align="left">

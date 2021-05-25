@@ -40,15 +40,18 @@
 		$errMsg = 'Registration successfull. Now you can <a href="login.php">login</a>';
 	}
 ?>
-
-<html>
-<head><title>Register</title></head>
-	<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<style>
 	html, body {
 		margin: 1px;
 		border: 0;
 	}
-	</style>
+</style>
 <body>
 	<div align="center">
 		<div style=" border: solid 1px #006D9C; " align="left">
@@ -63,6 +66,7 @@
 					<input type="text" name="u_name" placeholder="Username" value="<?php if(isset($_POST['u_name'])) echo $_POST['u_name'] ?>" autocomplete="off" class="box"/><br /><br />
 					<input type="text" name="u_email" placeholder="Email" value="<?php if(isset($_POST['u_email'])) echo $_POST['u_email'] ?>" autocomplete="off" class="box"/><br /><br />
 					<input type="password" name="u_password" placeholder="Password" value="<?php if(isset($_POST['u_password'])) echo $_POST['u_password'] ?>" class="box" /><br/><br />
+					<div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
 					<input type="submit" name='register' value="Register" class='submit'/><br />
 				</form>
 			</div>
