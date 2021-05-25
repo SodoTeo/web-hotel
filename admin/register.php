@@ -17,16 +17,15 @@
 		if($u_password == '')
 			$errMsg = 'Enter password';
 
-
 		if($errMsg == ''){
 			$u_password = trim($_POST["u_password"]);
-			$u_password = password_hash($u_password, PASSWORD_DEFAULT);
+			$hashed = password_hash(hash('sha512', $u_password), PASSWORD_DEFAULT);
 			try {
 				$stmt = $connect->prepare('INSERT INTO user (u_name, u_email, u_password) VALUES (:u_name, :u_email, :u_password)');
 				$stmt->execute(array(
 					':u_name' => $u_name,
 					':u_email' => $u_email,
-					':u_password' => $u_password
+					':u_password' => $hashed
 					));
 				header('Location: register.php?action=joined');
 				exit;

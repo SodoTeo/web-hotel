@@ -25,7 +25,9 @@
 					$errMsg = "User $u_name not found.";
 				}
 				else {
-					if(password_verify($_POST["u_password"], $data['u_password'])) {
+
+		
+					if(password_verify(hash('sha512', $u_password), $data['u_password'])) {
 						$_SESSION['u_id'] = $data['u_id'];
 						$_SESSION['u_email'] = $data['u_email'];
 						$_SESSION['u_name'] = $data['u_name'];
