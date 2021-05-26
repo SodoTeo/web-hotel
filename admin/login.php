@@ -1,3 +1,4 @@
+
 <?php
 	require 'db/config.php';
 
@@ -46,34 +47,54 @@
 		}
 	}
 ?>
+
+				
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Login</title>
-</head>
-<style>
-	html, body {
-		margin: 1px;
-		border: 0;
-	}
-</style>
-<body>
-	<div align="center">
-		<div style=" border: solid 1px #006D9C; " align="left">
-			<?php
-				if(isset($errMsg)){
-					echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
-				}
-			?>
-			<div style="background-color:#006D9C; color:#FFFFFF; padding:10px;"><b>Login</b></div>
-			<div style="margin: 15px">
-				<form action="" method="post">
-					<input type="text" name="u_name" value="<?php if(isset($_POST['u_name'])) echo $_POST['u_name'] ?>" autocomplete="on" class="box"/><br /><br />
-					<input type="password" name="u_password" value="<?php if(isset($_POST['u_password'])) echo $_POST['u_password'] ?>" autocomplete="off" class="box" /><br/><br />
-					<input type="submit" name='login' value="Login" class='submit'/><br />
-				</form>
-			</div>
-		</div>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='css/form.css' rel='stylesheet'>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+        <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+        <script type='text/javascript'></script> 
+        <title>Sign in</title>
+    </head>
+    <body>
+        <div id="booking" class="section">
+            <div class="section-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="booking-form">
+                            <div class="form-header">
+                                <h1>Sign in</h1>
+                            </div>
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input class="form-control" name="u_name" type="text" value="<?php if(isset($_POST['u_name'])) echo $_POST['u_name'] ?>">
+                                    <span class="form-label">Username</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="u_password" value="<?php if(isset($_POST['u_password'])) echo $_POST['u_password'] ?>">
+                                    <span class="form-label">Password</span>
+                                </div>
+                                <div class="form-btn">
+                                    <button type="submit" name='login' value="Login" class="submit-btn">Login</button>
+                                </div>
+								<br><br>
+								<div class="form-btn">
+									<button type="button" onclick="location.href='register.php'" style="background-color: #8ed68e;" class="submit-btn">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
 </html>
