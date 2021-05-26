@@ -186,3 +186,9 @@ body {
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
     opacity: 0.9;}
+
+    #upload-photo {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+     }
