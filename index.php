@@ -109,18 +109,18 @@
                                                 </a>
                                               </div>
                                                   <!-- Button trigger modal -->
-                                                <button type="button" style="    background-color: #8ed68e; border-color:#8ed68e;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <button type="button" style="    background-color: #8ed68e; border-color:#8ed68e;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal<?php echo $row['h_id']?>">
                                                 Read More
                                                 </button>
                                               </div>
                                             </div>
                                         </div>
                                         <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="modal<?php echo $row['h_id']?>" tabindex="-1" aria-labelledby="modal<?php echo $row['h_id']?>Label" aria-hidden="true">
                                           <div class="modal-dialog modal-dialog-scrollable">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Description</h5>
+                                                <h5 class="modal-title" id="modal<?php echo $row['h_id']?>Label">Description</h5>
                                                 <div class="card-body d-flex flex-row">
                                                 <div>
                                                   <p class="card-text"><i class="fas fa-tag"></i>  <?php echo $row['h_price']?></p>
@@ -229,11 +229,11 @@
                                         </div>
                             
                                         <!-- Modal -->
-                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="modal<?php echo $row['h_id']?>" tabindex="-1" aria-labelledby="modal<?php echo $row['h_id']?>Label" aria-hidden="true">
                                           <div class="modal-dialog modal-dialog-scrollable">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Description</h5>
+                                                <h5 class="modal-title" id="modal<?php echo $row['h_id']?>Label">Description</h5>
                                                 <div class="card-body d-flex flex-row">
                                                 <div>
                                                   <p class="card-text"><i class="fas fa-tag"></i>  <?php echo $row['h_price']?></p>
