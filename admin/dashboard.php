@@ -102,7 +102,7 @@
             </div>
         </div>
     </nav>
-	<div id="booking" class="section">
+	<div id="booking" style="    height: 150vh;" class="section">
             <div class="section-center">
                 <div class="container">
                     <div class="row">

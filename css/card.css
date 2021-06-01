@@ -1,0 +1,24 @@
+.mx-auto {
+  margin-right: 42%!important;
+  margin-left: auto!important;
+}
+.card {
+  width: 150%;
+
+}
+.flex-row {
+  flex-direction: row!important;
+  margin-left: 37%;
+}
+.container .gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}

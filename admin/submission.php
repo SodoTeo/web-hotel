@@ -60,6 +60,9 @@ if(isset($_REQUEST[ 'submit']))
                             <div class="form-header">
                                 <h1>Add your Hotel</h1>
                             </div>
+                            <div class="form-group">
+                                            <button type="button" onclick="location.href='dashboard.php'" class="submit-btn">Dashboard</button>
+                                        </div>
                             <form action="" method="post" enctype="multipart/form-data" name="hotels">
                                 <div class="form-group">
                                     <input class="form-control" name="h_title" type="text" placeholder="Hotel Name">
@@ -70,9 +73,57 @@ if(isset($_REQUEST[ 'submit']))
                                         <div class="form-group">
                                             <select name="h_nomo" class="form-control" required>
                                                 <option value="" selected hidden>Region</option>
-                                                <option>athens</option>
+                                                <option>attiki</option>
                                                 <option>larisa</option>
-                                                <option>skg</option>
+                                                <option>thessaloniki</option>
+                                                <option>evros</option>
+                                                <option>rodoph</option>
+                                                <option>ksanthi</option>
+                                                <option>ioannina</option>
+                                                <option>thesprotia</option>
+                                                <option>preveza</option>
+                                                <option>arta</option>
+                                                <option>trikala</option>
+                                                <option>karditsa</option>
+                                                <option>magnhsia</option>
+                                                <option>ahaia</option>
+                                                <option>korinthia</option>
+                                                <option>argolida</option>
+                                                <option>arkadia</option>
+                                                <option>ileia</option>
+                                                <option>messinia</option>
+                                                <option>lakonia</option>
+                                                <option>kerkura</option>
+                                                <option>leukada</option>
+                                                <option>kefallhnia</option>
+                                                <option>zakinthos</option>
+                                                <option>xania</option>
+                                                <option>rethimno</option>
+                                                <option>irakleio</option>
+                                                <option>lasithi</option>
+                                                <option>lesbos</option>
+                                                <option>xios</option>
+                                                <option>samos</option>
+                                                <option>kiklades</option>
+                                                <option>dodekanisa</option>
+                                                <option>euvoia</option>
+                                                <option>voiotia</option>
+                                                <option>fokida</option>
+                                                <option>aitoloakarnania</option>
+                                                <option>fthiotida</option>
+                                                <option>euritania</option>
+                                                <option>drama</option>
+                                                <option>kavala</option>
+                                                <option>serres</option>
+                                                <option>kilkis</option>
+                                                <option>halkidiki</option>
+                                                <option>pella</option>
+                                                <option>imathia</option>
+                                                <option>pieria</option>
+                                                <option>florina</option>
+                                                <option>kastoria</option>
+                                                <option>kozani</option>
+                                                <option>grevena</option>
                                             </select>
                                             <span class="select-arrow"></span>
                                         </div>
